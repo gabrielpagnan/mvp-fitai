@@ -1,0 +1,28 @@
+@import "tailwindcss";
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #0f172a;
+  color: #ffffff;
+}
+
+/* Custom utilities */
+.btn-primary {
+  @apply bg-gradient-to-r from-pink-500 to-pink-600 hover:from-pink-600 hover:to-pink-700 text-white font-semibold py-3 px-8 rounded-full transition duration-300 shadow-lg;
+}
+
+.btn-secondary {
+  @apply bg-gradient-to-r from-blue-500 to-blue-600 hover:from-blue-600 hover:to-blue-700 text-white font-semibold py-3 px-8 rounded-full transition duration-300 shadow-lg;
+}
+
+.card {
+  @apply bg-slate-800 p-6 rounded-lg shadow-lg border border-slate-700 hover:shadow-xl transition duration-300;
+}
+
+.input {
+  @apply bg-slate-700 text-white border border-slate-600 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500 transition duration-300;
+}
+
+.label {
+  @apply block text-sm font-medium text-slate-300 mb-2;
+}
